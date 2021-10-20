@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+
+</head>
+
+<body onload="cargarpag()">
+
+    <div id="observablehq-8861a18e"></div>
+
+    <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@eduardoandrade/processing-p5-js.js?v=3";
+        new Runtime().module(define, Inspector.into("#observablehq-8861a18e"));
+    </script>
+
+
+    <!-- Codigo del script-->
+    <script type="text/javascript" id="zsiqchat">
+        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+        {
+            widgetcode: "e9aa007488e69b2094c5e1e449b1b17db7f2f82455295712356ea65a32bd8141f0caf8e7871af327b04bc4f4e5568b45",
+            values: {}, ready: function () { }
+        };
+        var d = document;
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.id = "zsiqscript";
+        s.defer = true;
+        s.src = "https://salesiq.zoho.com/widget";
+        t = d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+
+    </script>
+
+    <!--Codigo del activador-->
+    <script>
+            function cargarpag(){
+            $zoho.salesiq.ready = function (embedinfo) {
+                $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo,name,email) {
+                    if (triggername == 'abrirchat') {
+                        $zoho.salesiq.visitor.name(name);
+                        $zoho.salesiq.visitor.email(email);
+                    }
+
+                });
+            }
+        }
+        cargarpag();
+
+    </script>
+
+
+
+    <!--https://www.zoho.com/salesiq/help/developer-section/js-api-event-visitor-trigger.html-->
+
+</body>
+
+</html>
