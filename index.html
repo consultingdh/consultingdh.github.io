@@ -24,6 +24,8 @@ new Runtime().module(define, Inspector.into("#observablehq-8861a18e"));
 
 <p>
 	
+	
+// Codigo del script
 <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
 		{widgetcode: "e9aa007488e69b2094c5e1e449b1b17db7f2f82455295712356ea65a32bd8141f0caf8e7871af327b04bc4f4e5568b45", 
 		 values:{},ready:function(){}};
@@ -31,6 +33,24 @@ new Runtime().module(define, Inspector.into("#observablehq-8861a18e"));
 	s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";
 	t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 	</script>
+	
+	
+	
+	
+// Codigo del activador	
+<script>
+
+$zoho.salesiq.ready = function (embedinfo){ $zoho.salesiq.visitor.trigger(function(triggername, visitorinfo){
+if (triggername == 'abrirchat') { // Inserte su codigo }
+
+} );
+//otros JSAPIs aquí
+
+}
+</script>
+	
+	
+// https://www.zoho.com/salesiq/help/developer-section/js-api-event-visitor-trigger.html
 	
 	
 </body>
