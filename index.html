@@ -8,7 +8,7 @@
 
 </head>
 
-<body onload=javascript:$zoho.salesiq.chat.start()>
+<body>
 
 
     <div id="observablehq-8861a18e"></div>
@@ -32,21 +32,18 @@
 
     </script>
 
-
-
-
-    <!--Codigo del activador-->
     <script>
-            function cargarpag(){
-            $zoho.salesiq.ready = function (embedinfo) {
-                $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
-                    if (triggername == 'abrirchat') { }
 
-                });
-            }
-        }
+    $zoho.salesiq.ready=function()
+
+    {
+       $zoho.salesiq.chatwindow.visible("show");
+    }
 
     </script>
+
+
+
 
 
 
